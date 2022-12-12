@@ -3,12 +3,10 @@
 declare(strict_types=1);
 
 use SmartpingApi\Model\Player\PlayerDetails;
-use SmartpingApi\SmartpingAPI;
 
 uses()->group('player');
 
 beforeEach(function() {
-    $this->smartping = new SmartpingAPI('SW399', 'Sy2zMFb91P');
     $this->smartping->authenticate();
 });
 

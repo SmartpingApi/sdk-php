@@ -4,13 +4,8 @@ declare(strict_types=1);
 
 use SmartpingApi\Model\Club\Club;
 use SmartpingApi\Model\Club\ClubDetail;
-use SmartpingApi\SmartpingAPI;
 
 uses()->group('club');
-
-beforeEach(function() {
-    $this->smartping = new SmartpingAPI('SW399', 'Sy2zMFb91P');
-});
 
 it('should return a list of clubs for a department', function() {
     $list = $this->smartping->findClubsByDepartment('16');

@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+use SmartpingApi\SmartpingAPI;
+use Symfony\Component\Dotenv\Dotenv;
+
 /*
 |--------------------------------------------------------------------------
 | Test Case
@@ -36,4 +39,13 @@ declare(strict_types=1);
 | global functions to help you to reduce the number of lines of code in your test files.
 |
 */
+uses()
+    ->beforeAll(function () {
+        $dotenv = new Dotenv();
+        $dotenv->loadEnv(__DIR__ . '/../.env');
+    })
+    ->beforeEach(function () {
+        $this->smartping = new SmartpingAPI($_ENV['APP_ID'], $_ENV['APP_KEY']);
+    })
+    ->in(__DIR__);
 

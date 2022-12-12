@@ -24,7 +24,8 @@
   },
   "require-dev": {
     "vimeo/psalm": "^4.25",
-    "pestphp/pest": "^1.21"
+    "pestphp/pest": "^1.21",
+    "symfony/dotenv": "^6.2"
   },
   "config": {
     "allow-plugins": {

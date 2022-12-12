@@ -3,13 +3,8 @@
 declare(strict_types=1);
 
 use SmartpingApi\Model\Common\News;
-use SmartpingApi\SmartpingAPI;
 
 uses()->group('common');
-
-beforeEach(function() {
-    $this->smartping = new SmartpingAPI('SW399', 'Sy2zMFb91P');
-});
 
 it('should return true when authenticate', function () {
     expect($this->smartping->authenticate())->toBeTrue();

@@ -5,12 +5,10 @@ declare(strict_types=1);
 use SmartpingApi\Model\Player\Game;
 use SmartpingApi\Model\Player\PlayerRankHistory;
 use SmartpingApi\Model\Player\RankedGame;
-use SmartpingApi\SmartpingAPI;
 
 uses()->group('player_history');
 
 beforeEach(function() {
-    $this->smartping = new SmartpingAPI('SW399', 'Sy2zMFb91P');
     $this->smartping->authenticate();
 });
 

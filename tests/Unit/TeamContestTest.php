@@ -6,12 +6,10 @@ use SmartpingApi\Model\Contest\Team\TeamMatch;
 use SmartpingApi\Model\Contest\Team\TeamMatchDetails;
 use SmartpingApi\Model\Contest\Team\TeamPool;
 use SmartpingApi\Model\Contest\Team\TeamPoolRank;
-use SmartpingApi\SmartpingAPI;
 
 uses()->group('team_contest');
 
 beforeEach(function() {
-    $this->smartping = new SmartpingAPI('SW399', 'Sy2zMFb91P');
     $this->smartping->authenticate();
 });
 
