@@ -6,6 +6,7 @@ namespace SmartpingApi\Enum;
 
 enum Certificate: string
 {
+    case PROVIDED = 'A';
     case OK = 'C';
     case NO_TRAINING = 'N';
     case QUADRUPLE = 'Q';
