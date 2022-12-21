@@ -14,6 +14,7 @@ enum LicenceCategory: string
     case JUNIOR_1 = 'J1';
     case JUNIOR_2 = 'J2';
     case JUNIOR_3 = 'J3';
+    case JUNIOR_4 = 'J4';
     case SENIOR = 'S';
     case VETERAN_1 = 'V1';
     case VETERAN_2 = 'V2';
