@@ -21,5 +21,4 @@ enum LicenceCategory: string
     case VETERAN_3 = 'V3';
     case VETERAN_4 = 'V4';
     case VETERAN_5 = 'V5';
-    case UNDEFINED = '';
 }
