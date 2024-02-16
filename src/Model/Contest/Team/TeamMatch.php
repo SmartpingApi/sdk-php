@@ -20,10 +20,10 @@ class TeamMatch extends SmartpingObject
     private string $teamNameB;
 
     #[SerializedName('scorea')]
-    private int $teamScoreA;
+    private string $teamScoreA;
 
     #[SerializedName('scoreb')]
-    private int $teamScoreB;
+    private string $teamScoreB;
 
     #[SerializedName('lien')]
     private string $link;
@@ -48,8 +48,8 @@ class TeamMatch extends SmartpingObject
         string $name,
         string $teamNameA,
         string $teamNameB,
-        int $teamScoreA,
-        int $teamScoreB,
+        string $teamScoreA,
+        string $teamScoreB,
         string $link
     ) {
         $this->name = empty($name) ? '' : $name;
