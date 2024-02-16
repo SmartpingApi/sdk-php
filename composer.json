@@ -1,7 +1,7 @@
 {
   "name": "aureldvx/smartping-api",
   "description": "PHP SDK to communicate with the FFTT Smartping API",
-  "version":"1.1.0",
+  "version":"1.1.1",
   "type": "library",
   "license": "MIT",
   "autoload": {
