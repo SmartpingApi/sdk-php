@@ -48,15 +48,15 @@ class TeamMatch extends SmartpingObject
         string $name,
         string $teamNameA,
         string $teamNameB,
-        int $teamScoreA,
-        int $teamScoreB,
+        $teamScoreA,
+        $teamScoreB,
         string $link
     ) {
         $this->name = empty($name) ? '' : $name;
         $this->teamNameA = empty($teamNameA) ? '' : $teamNameA;
         $this->teamNameB = empty($teamNameB) ? '' : $teamNameB;
-        $this->teamScoreA = empty($teamScoreA) ? 0 : $teamScoreA;
-        $this->teamScoreB = empty($teamScoreB) ? 0 : $teamScoreB;
+        $this->teamScoreA = empty($teamScoreA) ? 0 : (int)$teamScoreA;
+        $this->teamScoreB = empty($teamScoreB) ? 0 : (int)$teamScoreB;
         $this->link = empty($link) ? '' : $link;
 
         parse_str($link, $linkParts);
