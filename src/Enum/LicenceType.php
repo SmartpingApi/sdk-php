@@ -7,7 +7,7 @@ namespace SmartpingApi\Enum;
 enum LicenceType: string
 {
     case COMPETITION = 'T';
-    case TRAINING = 'P';
+    case LEISURE = 'P';
     case EVENT = 'E';
     case UNDEFINED = '';
     case EXECUTIVE = 'A';
