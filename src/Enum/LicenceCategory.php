@@ -16,9 +16,17 @@ enum LicenceCategory: string
     case JUNIOR_3 = 'J3';
     case JUNIOR_4 = 'J4';
     case SENIOR = 'S';
-    case VETERAN_1 = 'V1';
-    case VETERAN_2 = 'V2';
-    case VETERAN_3 = 'V3';
-    case VETERAN_4 = 'V4';
-    case VETERAN_5 = 'V5';
+    case VETERAN_40 = 'V40';
+    case VETERAN_45 = 'V45';
+    case VETERAN_50 = 'V50';
+    case VETERAN_55 = 'V55';
+    case VETERAN_60 = 'V60';
+    case VETERAN_65 = 'V65';
+    case VETERAN_70 = 'V70';
+    case VETERAN_75 = 'V75';
+    case VETERAN_80 = 'V80';
+    case VETERAN_85 = 'V85';
+    case VETERAN_90 = 'V90';
+    case VETERAN_95 = 'V95';
+    case VETERAN_100 = 'V100';
 }
