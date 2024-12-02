@@ -16,16 +16,15 @@
   ],
   "require": {
     "php": ">=8.1",
-    "symfony/serializer": "^6.4",
-    "symfony/http-client": "^6.4",
-    "symfony/property-access": "^6.4",
+    "symfony/serializer": "^6.3",
+    "symfony/property-access": "^6.3",
     "doctrine/annotations": "^1.14",
     "ext-curl": "*"
   },
   "require-dev": {
     "vimeo/psalm": "^4.30",
     "pestphp/pest": "^1.23",
-    "symfony/dotenv": "^6.4"
+    "symfony/dotenv": "^6.3"
   },
   "config": {
     "allow-plugins": {
