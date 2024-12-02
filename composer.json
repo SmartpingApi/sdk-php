@@ -17,16 +17,16 @@
   "require": {
     "php": ">=8.1",
     "ext-xml": "*",
-    "symfony/serializer": "^6.1",
-    "symfony/http-client": "^6.1",
-    "symfony/property-access": "^6.1",
-    "doctrine/annotations": "^1.13",
+    "symfony/serializer": "^6.4",
+    "symfony/http-client": "^6.4",
+    "symfony/property-access": "^6.4",
+    "doctrine/annotations": "^1.14",
     "ext-curl": "*"
   },
   "require-dev": {
-    "vimeo/psalm": "^4.25",
-    "pestphp/pest": "^1.21",
-    "symfony/dotenv": "^6.2"
+    "vimeo/psalm": "^4.30",
+    "pestphp/pest": "^1.23",
+    "symfony/dotenv": "^6.4"
   },
   "config": {
     "allow-plugins": {
