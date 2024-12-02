@@ -1,4 +1,7 @@
-PHP := `docker compose exec php`
+PHP := 'docker compose exec php'
+
+demo:
+    {{PHP}} php src/demo.php
 
 composer *args:
     {{PHP}} composer {{args}}

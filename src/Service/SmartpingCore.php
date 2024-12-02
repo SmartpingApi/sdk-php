@@ -231,8 +231,8 @@ abstract class SmartpingCore
             $response = self::makeRequest($endpoint, $requestParams);
 
             return self::deserializeObject($response, $normalizationModel, $rootKey);
-        } catch (Exception) {
-            //var_dump(sprintf('ERROR : %s', $e->getMessage()));
+        } catch (Exception $e) {
+            var_dump(sprintf('ERROR : %s', $e->getMessage()));
 
             return null;
         }
@@ -337,6 +337,7 @@ abstract class SmartpingCore
             CURLOPT_URL            => self::$baseUrl.$endpoint->value.'?'.$queryParamsEncoded,
             CURLOPT_HEADER         => false,
             CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_SSL_VERIFYPEER => false,
         ]);
 
         $response = (string)curl_exec($ch);

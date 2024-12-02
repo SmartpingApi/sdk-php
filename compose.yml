@@ -4,6 +4,7 @@ services:
       dockerfile: Dockerfile
       context: .
     container_name: smartping_php
+    entrypoint: "tail -f /dev/null"
     volumes:
       - ./:/app
     working_dir: /app
